@@ -1,9 +1,7 @@
 # NNblaster
 AI Design Builder, AIoC, emulator
 
-========================================================================
-       SiAiEm: SISCTECH AI EMULATION
-========================================================================
+# SiAiEm: SISCTECH AI EMULATION
 
 SiAiEm : Sisctech AI Emulation
 Contract:
