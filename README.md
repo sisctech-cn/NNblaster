@@ -29,13 +29,21 @@ Build:
 5. Open SiAiEm.sln in Microsoft visual studio 2015.
 6. Open ai/AiBase/AiBaseDefine/ai_base_product.h
 7. Modify the AI_PRODUCT_OPTION_ACCELARATOR_TYPE as AI_PRODUCT_ACCELERATOR_CPU or AI_PRODUCT_ACCELERATOR_SISCTECH_CMODEL1
+
 	#define AI_PRODUCT_ACCELERATOR_CPU                (0)
+
 	#define AI_PRODUCT_ACCELERATOR_SISCTECH_CMODEL1   (3)
+
 	#define AI_PRODUCT_OPTION_ACCELERATOR_TYPE        (AI_PRODUCT_ACCELERATOR_SISCTECH_CMODEL1)
+
 8. Modify the FLOAT_AI_T_TYPE_SIZE as AI_PRODUCT_FLOAT_SOFTWARE_FP16 or AI_PRODUCT_FLOAT_HARDWARE_FP32
+
 	#define AI_PRODUCT_FLOAT_HARDWARE_FP32            (0)
+
 	#define AI_PRODUCT_FLOAT_SOFTWARE_FP16            (1)
+
 	#define FLOAT_AI_T_TYPE_SIZE                      (AI_PRODUCT_FLOAT_SOFTWARE_FP16)
+
 9. Select the X64 release project type.
 10.Build it.
 
