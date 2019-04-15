@@ -45,7 +45,7 @@ Build:
 	#define FLOAT_AI_T_TYPE_SIZE                      (AI_PRODUCT_FLOAT_SOFTWARE_FP16)
 
 9. Select the X64 release project type.
-10.Build it.
+10. Build it.
 
 Run：
 1. Press [Browser] and select file Config\AiBaseAlphabetData\1080p.png in YoloV3 Ident tab.
