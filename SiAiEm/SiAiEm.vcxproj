@@ -1,0 +1,1735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>SiAiEm</ProjectName>
+    <ProjectGuid>{7AA6B32B-E7AD-622F-9C17-E0C33721C285}</ProjectGuid>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
+    <IncludePath>$(ProjectDir);$(ProjectDir)\Source\resource;$(ProjectDir)\Source\ui;$(ProjectDir)\Source\ui\SiAiUiElement;$(ProjectDir)\Source\ui\SiAiIdent\SiAiConfigIdent;$(ProjectDir)\Source\ui\SiAi;$(ProjectDir)\Source\ai\AiBase;$(ProjectDir)\Source\ai\AiBase\AiBaseLog;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\cmodel;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\command;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\command\tna;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\command\policy;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\clock;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\memory;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\riscv;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\riscv\ddr;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\riscv\bus;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\riscv\rocc;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\bus;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\dma;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\sram;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\sto;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\otl;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\ora;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\ldw;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\ldi;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\ira;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\ide;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\pea;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\ce\mae;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\router;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\voa;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel2\tna\tna;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\cmodel;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\command;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\command\tna;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\command\policy;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\clock;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\memory;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\riscv;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\riscv\ddr;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\riscv\bus;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\riscv\rocc;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\bus;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\dma;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\sram;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\sto;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\otl;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\ora;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\ldw;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\ldi;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\ira;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\ide;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\pea;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\ce\mae;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\router;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\voa;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1\tna\tna;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardSistech\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardSistech\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardSistech\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1;$(ProjectDir)\Source\ai\AiBase\AiBaseOS;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat16;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat32;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat64;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat;$(ProjectDir)\Source\ai\AiBase\AiBaseDriver;$(ProjectDir)\Source\ai\AiBase\AiBaseDefine;$(ProjectDir)\Source\ai\AiBase\AiBaseLnet;$(ProjectDir)\Source\ai\AiBase\AiBaseImage;$(ProjectDir)\Source\ai\AiBase\AiBaseAlphabetData;$(ProjectDir)\Source\ai\AiBase\AiBaseAlphabet;$(ProjectDir)\Source\ai\AiBase\AiBase1080p;$(ProjectDir)\Source\ai\AiBase\AiBaseImageNet;$(ProjectDir)\Source\ai\AiBase\AiBaseSdk;$(ProjectDir)\Source\ai\AiBase\AiBaseData;$(ProjectDir)\Source\ai\AiBoot;$(ProjectDir)\Source\ai\AiNet\AiNetDriver;$(ProjectDir)\Source\ai\AiNet\AiNetDriverCmodel1;$(ProjectDir)\Source\ai\AiNet\AiNetDriverCmodel2;$(ProjectDir)\Source\ai\AiNet\AiNetImage;$(ProjectDir)\Source\ai\AiNet\AiNetData;$(ProjectDir)\Source\ai\AiNet\AiNetLog;$(ProjectDir)\Source\ai\AiNet\AiNetSdk;$(ProjectDir)\Source\ai\AiIdent\AiIdentDriver;$(ProjectDir)\Source\ai\AiIdent\AiIdentData;$(ProjectDir)\Source\ai\AiIdent\AiIdentSdk;$(ProjectDir)\Source\ai\AiManage\AiManageDriver;$(ProjectDir)\Source\ai\AiManage\AiManageData;$(ProjectDir)\Source\ai\AiManage\AiManageApp;$(ProjectDir)\Source\ai\AiManage;$(ProjectDir)\Source\ai\AiSdk;$(ProjectDir)\Source\ai\AiServer;$(ProjectDir)\Source\ai\AiServer\AiServerDriver;$(ProjectDir)\Source\ai\AiServer\AiServerData;$(ProjectDir)\Source\ai\AiServer\AiServerApp;D:\Work\AI\AIWorkspace\SiAiX64\Source\ai\AiBase\AiBaseTnaIr\bm\inc;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\..\..\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <EmbedManifest>true</EmbedManifest>
+    <IncludePath>$(ProjectDir);$(ProjectDir)\Source\resource;$(ProjectDir)\Source\ui;$(ProjectDir)\Source\ui\SiAiUiElement;$(ProjectDir)\Source\ui\SiAiIdent\SiAiConfigIdent;$(ProjectDir)\Source\ui\SiAi;$(ProjectDir)\Source\ai\AiBase;$(ProjectDir)\Source\ai\AiBase\AiBaseLog;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1Lib;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardSistech\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardSistech\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardSistech\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardX86;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\bsp;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\drivers;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\utils;$(ProjectDir)\Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1;$(ProjectDir)\Source\ai\AiBase\AiBaseOS;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat16;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat32;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat64;$(ProjectDir)\Source\ai\AiBase\AiBaseFloat\AiBaseFloat;$(ProjectDir)\Source\ai\AiBase\AiBaseDriver;$(ProjectDir)\Source\ai\AiBase\AiBaseDefine;$(ProjectDir)\Source\ai\AiBase\AiBaseLnet;$(ProjectDir)\Source\ai\AiBase\AiBaseImage;$(ProjectDir)\Source\ai\AiBase\AiBaseAlphabetData;$(ProjectDir)\Source\ai\AiBase\AiBaseAlphabet;$(ProjectDir)\Source\ai\AiBase\AiBase1080p;$(ProjectDir)\Source\ai\AiBase\AiBaseImageNet;$(ProjectDir)\Source\ai\AiBase\AiBaseSdk;$(ProjectDir)\Source\ai\AiBase\AiBaseData;$(ProjectDir)\Source\ai\AiBoot;$(ProjectDir)\Source\ai\AiNet\AiNetDriver;$(ProjectDir)\Source\ai\AiNet\AiNetDriverCmodel1;$(ProjectDir)\Source\ai\AiNet\AiNetDriverCmodel2;$(ProjectDir)\Source\ai\AiNet\AiNetImage;$(ProjectDir)\Source\ai\AiNet\AiNetData;$(ProjectDir)\Source\ai\AiNet\AiNetLog;$(ProjectDir)\Source\ai\AiNet\AiNetSdk;$(ProjectDir)\Source\ai\AiIdent\AiIdentDriver;$(ProjectDir)\Source\ai\AiIdent\AiIdentData;$(ProjectDir)\Source\ai\AiIdent\AiIdentSdk;$(ProjectDir)\Source\ai\AiManage\AiManageDriver;$(ProjectDir)\Source\ai\AiManage\AiManageData;$(ProjectDir)\Source\ai\AiManage\AiManageApp;$(ProjectDir)\Source\ai\AiManage;$(ProjectDir)\Source\ai\AiSdk;$(ProjectDir)\Source\ai\AiServer;$(ProjectDir)\Source\ai\AiServer\AiServerDriver;$(ProjectDir)\Source\ai\AiServer\AiServerData;$(ProjectDir)\Source\ai\AiServer\AiServerApp;D:\Work\AI\AIWorkspace\SiAiX64\Source\ai\AiBase\AiBaseTnaIr\bm\inc;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\..\..\</OutDir>
+    <LibraryPath>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib\amd64;C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\lib\amd64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.10240.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\8.1\lib\winv6.3\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\Lib\um\x64;$(ProjectDir)\Source\ai\AiBase\AiBaseTnaCmodel1Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>_MBCS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
+      <ForcedIncludeFiles>stdlib.h;crtdbg.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\i100loader.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\SiAiX64.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AllowIsolation>true</AllowIsolation>
+      <AdditionalDependencies>nafxcwd.lib;LIBCMTD.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>nafxcwd.lib;LIBCMTD.lib</IgnoreSpecificDefaultLibraries>
+      <StackReserveSize>33554432</StackReserveSize>
+    </Link>
+    <ManifestResourceCompile>
+      <ResourceOutputFileName>$(TargetPath).embed.manifest.res</ResourceOutputFileName>
+    </ManifestResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\i100BleCollector.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\i100loader.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\i100loader.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\SiAiX64.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_MBCS;_TIMESPEC_DEFINED;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_RAND_S;WIN32;NDEBUG;_CONSOLE;_LIB;NO_WARN_MBCS_MFC_DEPRECATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\i100loader.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\SiAiX64.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>nafxcw.lib;LIBCMT.lib;SiAiEmCmodel1Lib.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>nafxcw.lib;LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <StackReserveSize>33554432</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Source\resource\SiAi.ico" />
+    <CustomBuild Include="res\SiAi.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="Source\resource\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\100_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\101_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\102_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\103_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\104_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\105_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\106_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\107_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\108_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\109_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\110_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\111_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\112_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\113_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\114_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\115_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\116_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\117_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\118_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\119_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\120_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\121_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\122_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\123_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\124_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\125_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\126_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\32_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\33_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\34_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\35_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\36_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\37_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\38_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\39_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\40_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\41_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\42_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\43_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\44_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\45_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\46_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\47_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\48_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\49_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\50_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\51_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\52_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\53_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\54_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\55_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\56_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\57_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\58_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\59_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\60_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\61_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\62_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\63_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\64_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\65_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\66_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\67_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\68_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\69_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\70_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\71_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\72_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\73_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\74_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\75_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\76_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\77_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\78_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\79_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\80_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\81_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\82_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\83_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\84_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\85_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\86_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\87_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\88_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\89_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\90_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\91_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\92_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\93_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\94_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\95_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\96_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\97_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\98_7.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_0.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_1.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_2.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_3.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_4.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_5.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_6.png" />
+    <None Include="Source\ai\AiBase\AiBaseAlphabetData\99_7.png" />
+    <None Include="Source\ai\AiNet\AiNetConfig\AiNetConfigYoloV3\AiNetConfigYoloV3Coco\coco.data" />
+    <None Include="Source\ai\AiNet\AiNetConfig\AiNetConfigYoloV3\AiNetConfigYoloV3Coco\coco.names" />
+    <None Include="Source\ai\AiNet\AiNetConfig\AiNetConfigYoloV3\AiNetConfigYoloV3Coco\yolov3.cfg" />
+    <None Include="Source\ai\AiNet\AiNetConfig\AiNetConfigYoloV3\AiNetConfigYoloV3Coco\yolov3.weights" />
+    <None Include="Source\ai\AiServer\AiServerData\ai_server_data_ro.c" />
+    <None Include="Source\ai\AiServer\AiServerData\ai_server_data_rw.c" />
+    <None Include="Source\resource\background.bmp" />
+    <None Include="Source\resource\SiAi.aps" />
+    <None Include="Source\resource\SiAi.bmp" />
+    <None Include="Source\resource\SiAi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLog\ai_base_log_cmodel.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_oper.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_oper.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat\ai_base_float_oper.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\bsp\ai_base_board_cmodel2_aux.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\drivers\ai_base_board_cmodel2_aio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\drivers\ai_base_board_cmodel2_aux_aio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\bsp\ai_base_board_cmodel1_aux.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\drivers\ai_base_board_cmodel1_aio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\drivers\ai_base_board_cmodel1_aux_aio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseImageNet\ai_base_image_net.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_predict_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_predict_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_weights_f16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetLog\ai_net_log_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentData\ai_ident_data_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentData\ai_ident_data_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_convolutional_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_route_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_shortcut_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_upsample_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_yolo_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetImage\ai_net_image.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBase1080p\ai_base_image_1080p.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseData\ai_base_data.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseData\ai_base_data_ro.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseData\ai_base_data_rw.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_bf.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvt16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvt32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvt64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvtfloat16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvtfloat32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvtfloat64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_general.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_test.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_general.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvt16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvt32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvt64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_bf.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseDriver\ai_base_int.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseDriver\ai_base_time.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseDriver\ai_base_uart_dma.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_test.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvtfloat64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvtfloat32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvt16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvtfloat16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvt32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvt64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_general.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_test.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_bf.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvtfloat64.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvtfloat16.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseImage\ai_base_image.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetImage\ai_net_image_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseImage\ai_base_image_stb_png.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseImage\ai_base_image_stb_zlib.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_addr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_interface.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_link.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_modbus_master.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_modbus_public.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_modbus_slave.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_net.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_packet.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_phy.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseLog\ai_base_log.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardX86\drivers\ai_base_board_x86_aux_aio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardX86\bsp\ai_base_board_x86_aux.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseSdk\ai_base_sdk.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvtfloat32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseImage\ai_base_image_stb.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseAlphabet\ai_base_image_alphabet.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiBase\AiBaseOS\AiBoardX86\drivers\ai_base_board_x86_aio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentData\ai_ident_data.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentData\ai_ident_data_ro.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentData\ai_ident_data_rw.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_predict.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentSdk\ai_ident_sdk.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_boxes.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_draw.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageApp\ai_manage_core0.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageApp\ai_manage_core1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageApp\ai_manage_main.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageData\ai_manage_data.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageData\ai_manage_data_ro.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageData\ai_manage_data_rw.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageSdk\ai_manage_sdk.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageDriver\ai_manage_detect.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageDriver\ai_manage_ident.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiManage\AiManageDriver\ai_manage_root.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetData\ai_net_data.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetData\ai_net_data_ro.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetData\ai_net_data_rw.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_convolutional_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_route_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_shortcut_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_upsample_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_yolo_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_config.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetImage\ai_net_image_cmodel1.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetLog\ai_net_log_cmodel2.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetSdk\ai_net_sdk.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_weights.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_classes.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_network.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_convolutional.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_content.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_network_content.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_shortcut.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_yolo.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_upsample.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_route.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiSdk\ai_sdk.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiServer\AiServerApp\ai_server_app.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiServer\AiServerData\ai_server_data.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ai\AiServer\AiServerSdk\ai_server_sdk.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ui\SiAiIdent\SiAiConfigIdent\SiAiConfigIdent.cpp" />
+    <ClCompile Include="Source\ui\SiAiIdent\SiAiConfigIdent\SiAiConfigWeightsConvert.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiStateFileContent.cpp" />
+    <ClCompile Include="Source\ui\SiAi\SiAi.cpp" />
+    <ClCompile Include="Source\ui\SiAi\SiAiDeviceSelectService.cpp" />
+    <ClCompile Include="Source\ui\SiAi\SiAiDlg.cpp" />
+    <ClCompile Include="Source\ui\SiAi\SiAiHelp.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataShort.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataComboShort.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiSdkData.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataTab.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataCombo.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameData.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataSwitchBar.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNumberData.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNumberDataProcessBar.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNumberDataSwitchBar.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiLogFile.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceStateNameData.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceStateNameDataSwitchBar.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceStateNumberDataSwitchBar.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceStateNumberDataProcessBar.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiGetDeviceStateFile.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiAddLocalFiles.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiAlgorithm.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiTickTest.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceData.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiManageCom.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiSerialComm.cpp" />
+    <ClCompile Include="Source\resource\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiDeviceConfigButton.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiStateFileF16Content.cpp" />
+    <ClCompile Include="Source\ui\SiAiUiElement\SiAiStateFileF32Content.cpp" />
+    <ClCompile Include="Source\ui\SiAi\SiAiStateNet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaCmodel1Lib\ai_base_tna_cmodel1_lib.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLog\ai_base_log_cmodel.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_oper.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_oper.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat\ai_base_float_oper.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\bsp\ai_base_board_cmodel2_aux.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\drivers\ai_base_board_cmodel2_aio.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel2\drivers\ai_base_board_cmodel2_aux_aio.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\bsp\ai_base_board_cmodel1_aux.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\drivers\ai_base_board_cmodel1_aio.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardTnaCmodel1\drivers\ai_base_board_cmodel1_aux_aio.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseImageNet\ai_base_image_net.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriverCmodel1\ai_net_layer_cmodel1.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriverCmodel2\ai_net_layer_cmodel2.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_weights_f16.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetLog\ai_net_log_cmodel1.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetImage\ai_net_image_cmodel1.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetImage\ai_net_image_cmodel2.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetImage\ai_net_image.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBase1080p\ai_base_image_1080p.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseData\ai_base_data.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseData\ai_base_data_ro.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseData\ai_base_data_rw.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseData\ai_base_global.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDefine\ai_base_error.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDefine\ai_base_os.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDefine\ai_base_product.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDefine\ai_base_type.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_bf.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_bf_general.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvt16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvt32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvt64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvtfloat16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvtfloat32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_cvtfloat64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_general.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat64\ai_base_float64_test.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_general.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvt16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvt32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvt64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_bf.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDriver\ai_base_int.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDriver\ai_base_time.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseDriver\ai_base_uart_dma.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_test.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvtfloat64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvtfloat32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvt16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvtfloat16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvt32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvt64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_general.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_test.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_bf.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_bf_general.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvtfloat64.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_cvtfloat16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseImage\ai_base_image.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseImage\ai_base_image_stb_png.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseImage\ai_base_image_stb_zlib.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_addr.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_interface.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_link.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_modbus_master.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_modbus_public.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_modbus_slave.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_net.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_packet.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLnet\ai_base_lnet_phy.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseLog\ai_base_log.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardX86\drivers\ai_base_board_x86_aux_aio.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardX86\bsp\ai_base_board_x86_aux.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseSdk\ai_base_sdk.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat16\ai_base_float16_bf_general.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseFloat\AiBaseFloat32\ai_base_float32_cvtfloat32.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseImage\ai_base_image_stb.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseAlphabet\ai_base_image_alphabet.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseOS\AiBoardX86\drivers\ai_base_board_x86_aio.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\BI.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\BO.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\BW.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\DDR.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\dma.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\fp16.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\Global.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\ide.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\IRA.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\mae.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\ORA.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\PEA.h" />
+    <ClInclude Include="Source\ai\AiBase\AiBaseTnaIr\inc\h\router.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentData\ai_ident_data.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentData\ai_ident_data_ro.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentData\ai_ident_data_rw.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentData\ai_ident_global.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_predict.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentSdk\ai_ident_sdk.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_boxes.h" />
+    <ClInclude Include="Source\ai\AiIdent\AiIdentDriver\ai_ident_draw.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageApp\ai_manage_core0.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageApp\ai_manage_core1.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageApp\ai_manage_main.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageData\ai_manage_data.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageData\ai_manage_data_ro.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageData\ai_manage_data_rw.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageData\ai_manage_global.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageSdk\ai_manage_sdk.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageDriver\ai_manage_detect.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageDriver\ai_manage_ident.h" />
+    <ClInclude Include="Source\ai\AiManage\AiManageDriver\ai_manage_root.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetData\ai_net_data.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetData\ai_net_data_ro.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetData\ai_net_data_rw.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetData\ai_net_global.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_state.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_config.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetLog\ai_net_log_cmodel2.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetSdk\ai_net_sdk.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_weights.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_classes.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_network.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_convolutional.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_content.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_network_content.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_shortcut.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_yolo.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_upsample.h" />
+    <ClInclude Include="Source\ai\AiNet\AiNetDriver\ai_net_layer_route.h" />
+    <ClInclude Include="Source\ai\AiSdk\ai_sdk.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerApp\ai_server_app.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerData\ai_server_data.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerData\ai_server_data_ro.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerData\ai_server_data_rw.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerData\ai_server_global.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerData\ai_server_win_stub.h" />
+    <ClInclude Include="Source\ai\AiServer\AiServerSdk\ai_server_sdk.h" />
+    <ClInclude Include="Source\ui\SiAiIdent\SiAiConfigIdent\SiAiConfigIdent.h" />
+    <ClInclude Include="Source\ui\SiAiIdent\SiAiConfigIdent\SiAiConfigWeightsConvert.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiStateFileContent.h" />
+    <ClInclude Include="Source\ui\SiAi\SiAi.h" />
+    <ClInclude Include="Source\ui\SiAi\SiAiDeviceSelectService.h" />
+    <ClInclude Include="Source\ui\SiAi\SiAiDlg.h" />
+    <ClInclude Include="Source\ui\SiAi\SiAiGlobal.h" />
+    <ClInclude Include="Source\ui\SiAi\SiAiHelp.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataShort.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataComboShort.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiSdkData.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataTab.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataCombo.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameData.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNameDataSwitchBar.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNumberData.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNumberDataProcessBar.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigNumberDataSwitchBar.h" />
+    <ClInclude Include="Source\resource\resource.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiLogFile.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceStateNameData.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceStateNameDataSwitchBar.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceStateNumberDataSwitchBar.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceStateNumberDataProcessBar.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiGetDeviceStateFile.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiAddLocalFiles.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiAlgorithm.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiTickTest.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceData.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiManageCom.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiSerialComm.h" />
+    <ClInclude Include="Source\resource\StdAfx.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiDeviceConfigButton.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiStateFileF16Content.h" />
+    <ClInclude Include="Source\ui\SiAiUiElement\SiAiStateFileF32Content.h" />
+    <ClInclude Include="Source\ui\SiAi\SiAiStateNet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\resource\SiAi.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\resource\Source\resource\background.bmp" />
+    <Image Include="Source\resource\Source\resource\SiAi.bmp" />
+    <Image Include="Source\resource\Source\resource\SiAi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Source\ai\AiBase\AiBaseTnaCmodel1Lib\SiAiEmCmodel1Lib.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
