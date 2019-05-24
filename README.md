@@ -11,6 +11,7 @@ AI Design Builder, AIoC, emulator
 
 在此我们将NNblaster做为一个子系统emulator的功能模块发放上来，还将会不断补充文档，展示其作为AI IP EDA工具的功用。在开放的代码中，您可以看到从NN demo到IP EDA的背后所需的工作，其中所调用的IR接口以及驱动层接口可见。祝您阅得灵思泉涌。祝您清鉴选择，洞察方案，买得放心。
 
+# download: http://www.sisctech.cn/uploads/soft/sisc_security.tgz
 # SiAiEm: SISCTECH AI EMULATION
 
 SiAiEm : Sisctech AI Emulation
